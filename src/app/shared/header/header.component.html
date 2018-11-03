@@ -1,0 +1,62 @@
+<!-- header-section-->
+        <div class="header-wrapper">
+            <div class="top-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-7 col-md-8 d-none d-xl-block d-sm-block">
+                            <div class="top-header-content">
+                                
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-4 col-md-3 col-sm-6 col-8 d-none d-block d-sm-block">
+                            <div class="top-header-content">
+                                
+                            </div>
+                        </div>
+                        <div class="barraLogin">
+                           <a href="#" class="search-icon" data-toggle="modal" data-target="#exampleModal">
+                           <i class="fa fa-search"></i></a>
+
+                           <a href="#" class="search-icon" data-toggle="modal" data-target="#exampleModal">
+                           <i class="fa fa-user"> {{btnIniciarSesion}} </i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header-section-->
+            <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-2 col-md-3 col-sm-3 col-12">
+                            <div class="logo"> <a href="index.html"><img src="assets/images/logo.png" alt=""> </a> </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-10 col-md-9 col-sm-12 col-12">
+                            <!-- navigations-->
+                            <div class="navigation">
+                                <div id="navigation">
+                                    <ul>
+                                        <li class="active"><a href="index.html">Inicio</a></li>
+                                        <li class="has-sub"><a href="#">{{ btnHoteles }}</a>
+                                            <ul>
+                                                <li *ngFor="let opcionMenu of btnCategorias">
+                                                    <a routerLink="listado">{{ opcionMenu }}</a>
+                                                </li>
+                                                
+                                                
+                                            </ul>
+                                        </li>
+                                        <li><a routerLink="acercade">Quienes somos</a></li>
+                                        
+                                        
+                                        <li><a routerLink="contacto">Contacto</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /.navigations-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /. header-section-->
