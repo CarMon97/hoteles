@@ -17,7 +17,7 @@
                            <a href="#" class="search-icon" data-toggle="modal" data-target="#exampleModal">
                            <i class="fa fa-search"></i></a>
 
-                           <a href="#" class="search-icon" data-toggle="modal" data-target="#exampleModal">
+                           <a routerLink="login" class="search-icon">
                            <i class="fa fa-user"> {{btnIniciarSesion}} </i></a>
                         </div>
                     </div>
@@ -35,20 +35,21 @@
                             <div class="navigation">
                                 <div id="navigation">
                                     <ul>
-                                        <li class="active"><a href="index.html">Inicio</a></li>
-                                        <li class="has-sub"><a href="#">{{ btnHoteles }}</a>
+                                        <li class="active"><a routerLink="inicio">{{btnInicio}}</a></li>
+                                        <li class="has-sub"><a href="#">{{btnHoteles}}</a>
                                             <ul>
-                                                <li *ngFor="let opcionMenu of btnCategorias">
-                                                    <a routerLink="listado">{{ opcionMenu }}</a>
-                                                </li>
                                                 
+                                                <li *ngFor="let x of btnCategorias">
+                                                    <a href="tour-list.html">{{x}}</a>
+                                                </li>
+                                                    
                                                 
                                             </ul>
                                         </li>
-                                        <li><a routerLink="acercade">Quienes somos</a></li>
+                                        <li><a routerLink="quienes-somos">Quienes Somos</a></li>
                                         
                                         
-                                        <li><a routerLink="contacto">Contacto</a></li>
+                                        <li><a href="contact-us.html">Contacto</a></li>
                                         
                                     </ul>
                                 </div>

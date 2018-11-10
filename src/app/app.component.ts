@@ -3,21 +3,16 @@ import { Component } from '@angular/core';
 import { InfoPaginaService } from './services/info-pagina.service';
 
 @Component({
-  selector: 'pepepig',
+  selector: 'pepapig',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'PEPAPIG';
-  subtitle ="Este es un subtitulo";
+  subtitulo ="En el pais de las maravillas";
   
-  /* asasas */
-  //sdsd
-  numero:number = 4;
-  nombre:string ="cadena";
- 
- constructor(public InfoPaginaService:InfoPaginaService){
-   
- }
+  constructor(public infoPaginaService:InfoPaginaService){
+    
+  }
   
 }

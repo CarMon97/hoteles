@@ -4,49 +4,34 @@
                 <!-- item -->
                 <div class="item">
                     <div class="slider-img">
-                        <img src="assets/images/hoteles-slider/El-Castillo-13.jpg" alt=""></div>
+                        <img src="assets/images/slide1.jpg" alt=""></div>
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="slider-captions">
-                                    <h1 class="slider-title">Hoteles al mejor precio</h1>
-                                    <a routerLink="listado" class="btn btn-primary">Ver lista de hoteles</a>
+                                    <h1 class="slider-title">Hotel San Andres</h1>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- /.item -->
+                
                 <!-- item -->
                 <div class="item">
-                    <div class="slider-img"><img src="assets/images/hoteles-slider/mast-2.jpg" alt=""></div>
+                    <div class="slider-img"><img src="assets/images/slide2.jpg" alt=""></div>
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="slider-captions">
-                                    <h1 class="slider-title">Hoteles al mejor precio</h1>
-                                    <a routerLink="listado" class="btn btn-primary">Ver lista de hoteles</a>
+                                    <h1 class="slider-title">Hotel Cartagena</h1>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- /.item -->
-                <!-- item -->
-                <div class="item">
-                    <div class="slider-img"><img src="assets/images/hoteles-slider/San-Lazaro.jpg" alt=""></div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="slider-captions">
-                                    <h1 class="slider-title">Hoteles al mejor precio</h1>
-                                    <a routerLink="listado" class="btn btn-primary">Ver lista de hoteles</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.item -->
+                
             </div>
         </div>
         <!-- /.slider -->
@@ -104,40 +89,48 @@
             </div>
         </div>
         <!-- /.enguiry-form -->
-
+        <!-- tour-service -->
+        <div class="space-medium">
+            <div class="container">
+                
+                <!-- Esto es un ciclo que trae todos los hijos de un objeto JSON -->
+                
+                <div *ngFor="let hoteles of pepaPig.hoteles"  >
+                    
+                    <div *ngIf="hoteles.destacado==1" class="row">
+                        <div class="col-xl-4 col-lg-4 offset-md-1 col-md-4 col-sm-12 col-12 mb40">
+                            <div class="tour-img">
+                                <a href="#" class="imghover"> <img src="{{hoteles.imagen}}" alt="" class="img-fluid"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 offset-md-1 col-md-5 col-sm-12 col-12 mb40">
+                            <div class="tour-block">
+                                <div class="tour-content">
+                                    <h2 class="mb30"><a href="#" class="title">{{hoteles.nombre}}</a></h2>
+                                    <p class="mb30">{{hoteles.descripcion}}</p>
+                                    <a href="#" class="btn-link">Ver más {{hoteles.nombre}}<i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                
+                <!-- /.tour-1 -->
+                
+            </div>
+        </div>
+        <!-- /.tour-service -->
         <!-- destination-section -->
         <div class="space-medium">
             <div class="container-fluid">
-                <div class="row justify-content-center">
+                <div class="row">
                     <!-- section-title -->
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
                         <div class="section-title">
-                            <h2>Mejores Hoteles</h2>
+                            <h2>Top Destinations</h2>
                         </div>
                     </div>
-                    
-                    <div class="card-deck" style="padding-bottom:25px; padding-top:25px;">
-                        <div class="card">
-                            <img src="assets/images/hoteles/intercontinental.jpg" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <a routerLink="detalles">Intercontinental Hotel</a>
-                        </div>
-                        </div>
-        
-                    <div class="card">
-                            <img src="assets/images/hoteles/nh-hotel.jpg" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <a routerLink="detalles">Nh Hotel</a>
-                        </div>
-                    </div>
-        
-                            <div class="card">
-                                <img src="assets/images/hoteles/roosevelt.jpg" alt="" class="card-img-top">
-                                <div class="card-body">
-                               <a routerLink="detalles">Roosevelt Plaza Hotel</a>
-            </div>
-        </div>
-    </div>
                     <!-- /.section-title -->
                 </div>
                 <div class="row">
@@ -230,85 +223,150 @@
             </div>
         </div>
         <!-- /.destination-section -->
-        <!-- about-section -->
-        <div class="space-medium">
+        
+        <!-- service-section -->
+        <div class="space-medium service-wrapper" style="">
             <div class="container">
-                <!-- about-head -->
+                <!-- service-head -->
                 <div class="row">
                     <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 mb60">
                         <div class="">
-                            <h2>We are <br> Travel Agency</h2>
+                            <h2>Our Services</h2>
                         </div>
                     </div>
                     <div class="col-xl-8 col-lg-8 offset-md-1 col-md-8 col-sm-12 col-12 mb60">
                         <div class="">
-                            <p class="lead">Pellentesque luctus felis non nibh masus consectetuis sed nisl eniull lentesque euismod eronon ntesque tortor molestie egurabitur lorem ien elementumelitac eleifue nisl fringilla nisia tris.</p>
+                            <p class="lead">Suctus felis non nibh maximus consectetuis sed nisl eniullase pellentesque euismod eronon ntesque tortor molestieege.</p>
                         </div>
                     </div>
                 </div>
-                <!-- /.about-head -->
+                <!-- /.service-head -->
                 <div class="row">
-                    <!-- feature-section -->
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
-                        <div class="well-block">
-                            <!-- feature-left -->
-                            <div class="feature-left">
-                                <div class="feature-icon"><img src="./images/calendar.png" alt=""></div>
-                                <div class="feature-content">
-                                    <h4>Everything’s on Schedule</h4>
-                                    <p>Cras porttitor tortor erateget accumsan is feltumsit.</p>
-                                </div>
-                            </div>
-                            <!-- /.feature-left -->
-                            <!-- feature-left -->
-                            <div class="feature-left">
-                                <div class="feature-icon"><img src="./images/adventure.png" alt=""></div>
-                                <div class="feature-content">
-                                    <h4>Destination Variety</h4>
-                                    <p>Pellentesque imperdiet esmpus finibusse euismunc.</p>
-                                </div>
-                            </div>
-                            <!-- /.feature-left -->
-                            <!-- feature-left -->
-                            <div class="feature-left">
-                                <div class="feature-icon"><img src="./images/hotel.png" alt=""></div>
-                                <div class="feature-content">
-                                    <h4>Comfortable Housing</h4>
-                                    <p>Vestiulum sodales tempudin one erlctus iedate. </p>
-                                </div>
-                            </div>
-                            <!-- /.feature-left -->
+                    <!-- service-block -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 nopr">
+                        <div class="service-block border-bottom border-right">
+                            <div class="service-img"><img src="./images/hotel_1.png" alt=""></div>
+                            <div class="service-content">
+                                <h3 class="service-title">Hotel Reservation</h3></div>
                         </div>
                     </div>
-                    <!-- /.feature-section -->
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
-                        <div class="well-block">
-                            <div class="counter-block">
-                                <h1 class="counter-numbers">689+</h1>
-                                <div class="counter-content">
-                                    <h4>Tours</h4>
-                                    <p>Cras porttitor tortor erateget taccumsan.</p>
-                                </div>
+                    <!-- /.service-block -->
+                    <!-- service-block -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 nopl nopr">
+                        <div class="service-block border-bottom border-right">
+                            <div class="service-img"><img src="./images/disability.png" alt=""></div>
+                            <div class="service-content">
+                                <h3 class="service-title">Staff Transportation Services </h3></div>
+                        </div>
+                    </div>
+                    <!-- /.service-block -->
+                    <!-- service-block -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 nopl">
+                        <div class="service-block border-bottom">
+                            <div class="service-img"><img src="./images/airplane.png" alt=""></div>
+                            <div class="service-content">
+                                <h3 class="service-title">Air Ticketing Services</h3></div>
+                        </div>
+                    </div>
+                    <!-- /.service-block -->
+                    <!-- service-block -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 nopr">
+                        <div class="service-block border-right">
+                            <div class="service-img"><img src="./images/passport.png" alt=""></div>
+                            <div class="service-content">
+                                <h3 class="service-title">Passport and Visa Assistance </h3></div>
+                        </div>
+                    </div>
+                    <!-- /.service-block -->
+                    <!-- service-block -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 nopl nopr">
+                        <div class="service-block  border-right">
+                            <div class="service-img"><img src="./images/car_wash.png" alt=""></div>
+                            <div class="service-content">
+                                <h3 class="service-title">Car Rental Services </h3></div>
+                        </div>
+                    </div>
+                    <!-- /.service-block -->
+                    <!-- service-block -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 nopl">
+                        <div class="service-block service-right-border service-bottom-border">
+                            <div class="service-img"><img src="./images/car.png" alt=""></div>
+                            <div class="service-content">
+                                <h3 class="service-title">Car on Call</h3></div>
+                        </div>
+                    </div>
+                    <!-- /.service-block -->
+                </div>
+            </div>
+        </div>
+        <!-- /.service-section -->
+        <!-- testimonial-section -->
+        <div class="space-medium bg-light">
+            <div class="container">
+                <div class="row">
+                    <!-- testimonial-head -->
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb60">
+                        <div class="testimonial-head">
+                            <div class="quote-icon">
+                                <img src="./images/left_quote.png" alt="">
                             </div>
-                            <div class="counter-block">
-                                <h1 class="counter-numbers">320+</h1>
-                                <div class="counter-content">
-                                    <h4>Destinations</h4>
-                                    <p>Pellentesque luctus felisnon nib its consecteuis.</p>
+                            <h2 class="mb40">What Our Customers Say About Our Tours</h2>
+                            <a href="#" class="btn-link">Read All Reviews <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- /.testimonial-head -->
+                    <div class="col-xl-6 col-lg-6 offset-md-1 col-md-6 col-sm-12 col-12 mb60">
+                        <div class="testimonial-carousel">
+                            <div class="owl-carousel owl-theme testimonial-owl">
+                                <!-- testimonial-item -->
+                                <div class="item">
+                                    <div class="testimonial-block">
+                                        <div class="testimonial-content">
+                                            <p class="testimonial-text">“Nam aclorem atsem vulputate euismodulla nonlacinia augueauriset venenatis maurised consequat quis exa plarliquam”</p>
+                                            <span class="testi-meta"><strong>- Sarah Arnold</strong> (Our Tourist)</span>
+                                            <div class="testi-arrow"></div>
+                                        </div>
+                                        <div class="testi-img">
+                                            <img src="./images/testi_img_1.jpg" alt="" class="rounded-circle">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="counter-block">
-                                <h1 class="counter-numbers">60+</h1>
-                                <div class="counter-content">
-                                    <h4>Countries</h4>
-                                    <p>Sed gravida eleequenec fringilla dolonteger.</p>
+                                <!-- /.testimonial-item -->
+                                <!-- testimonial-item -->
+                                <div class="item">
+                                    <div class="testimonial-block">
+                                        <div class="testimonial-content">
+                                            <p class="testimonial-text">“Proin dictum justo at finibus consectetur Proin odio odio molestie qui commodo sit amet euismod dictum ligula”</p>
+                                            <span class="testi-meta"><strong>- Maria Young</strong> (Our Tourist)</span>
+                                            <div class="testi-arrow"></div>
+                                        </div>
+                                        <div class="testi-img">
+                                            <img src="./images/testi_img_2.jpg" alt="" class="rounded-circle">
+                                        </div>
+                                    </div>
                                 </div>
+                                <!-- /.testimonial-item -->
+                                <!-- testimonial-item -->
+                                <div class="item">
+                                    <div class="testimonial-block">
+                                        <div class="testimonial-content">
+                                            <p class="testimonial-text">“Crasin leo arcuiquamnec elementum erossed tincidunt dolroin tristiquecongue Inaex pharetra euismod duieget”</p>
+                                            <span class="testi-meta"><strong>- Helena Lehoux</strong> (Our Tourist)</span>
+                                            <div class="testi-arrow"></div>
+                                        </div>
+                                        <div class="testi-img">
+                                            <img src="./images/testi_img_3.jpg" alt="" class="rounded-circle">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.testimonial-item -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- testimonial-section -->
         <!-- /.client-section -->
         <div class="space-small">
             <div class="container">

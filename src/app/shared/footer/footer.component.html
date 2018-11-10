@@ -38,10 +38,10 @@
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 ">
                         <div class="footer-widget">
                             <h3 class="footer-title">Contact Info</h3>
-                            <div class="ft-contact-info"> <span class="ft-contact-icon"><i class="fa fa-map-marker"></i></span> <span class="ft-contact-text">3927 Birch StreetEl Paso, TX 79930 </span></div>
-                            <div class="ft-contact-info"> <span class="ft-contact-icon"><i class="fa fa-phone "></i></span> <span class="ft-contact-text">+180-123-4567</span></div>
-                            <div class="ft-contact-info"> <span class="ft-contact-icon"><i class="fa fa-envelope "></i></span> <span class="ft-contact-text">info@travel.com</span></div>
-                            <div class="social-icon "> <a href="# " class="btn-social-icon "><i class="fa fa-facebook "></i></a> <a href="# " class="btn-social-icon "><i class="fa fa-twitter "></i></a> <a href="# " class="btn-social-icon "><i class="fa fa-linkedin "></i></a> <a href="# " class="btn-social-icon "><i class="fa fa-google-plus "></i></a> </div>
+                            <div class="ft-contact-info"> <span class="ft-contact-icon"><i class="fa fa-map-marker"></i></span> <span class="ft-contact-text"> {{_servicioPagina.info.direccion}} </span></div>
+                            <div class="ft-contact-info"> <span class="ft-contact-icon"><i class="fa fa-phone "></i></span> <span class="ft-contact-text">{{_servicioPagina.info.telefono}}</span></div>
+                            <div class="ft-contact-info"> <span class="ft-contact-icon"><i class="fa fa-envelope "></i></span> <span class="ft-contact-text">{{_servicioPagina.info.correo}}</span></div>
+                            <div class="social-icon "> <a href="{{_servicioPagina.info.facebook}}" class="btn-social-icon "><i class="fa fa-facebook "></i></a> <a href="{{_servicioPagina.info.linkedin}}" class="btn-social-icon "><i class="fa fa-linkedin "></i></a> <a href="{{_servicioPagina.info.instagram}}" class="btn-social-icon "><i class="fa fa-google-plus "></i></a> </div>
                         </div>
                     </div>
                     <!-- /.footer-post -->
@@ -59,3 +59,4 @@
                 </div>
             </div>
         </div>
+        <!-- /.footer -->

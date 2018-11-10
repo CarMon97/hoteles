@@ -220,19 +220,7 @@ button.btn { margin-right: -1px; }
 
 /*-----------------------------------
    4. General / Elements 
-   
-   
 -----------------------------------*/
-
-.card-body{
-    background-color: #1b95e0;
-}
-
-.card-body a{
-    color:white;
-    transform: scale(1.5);
-    transition: transform .2s;
-}
 
 /*----------------------- 
    4.1 Section space :
@@ -446,7 +434,7 @@ img { width: auto; max-width: 100%; height: auto; margin: 0; padding: 0; border:
 .top-social a { font-size: 14px; color: #36333c; }
 .top-social a:hover { color: #5314a8; }
 .header-wrapper { background-color: #fff; border-bottom: 1px solid #eee; z-index: 9; position: relative; }
-.header { padding-top: 25px; padding-bottom: 20px; background-color: #004178; }
+.header { padding-top: 25px; padding-bottom: 20px; background-color: #f5f3f3; }
 .logo { }
 .top-header-icon { font-size: 14px; background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF); background: radial-gradient(circle at 33% 100%, #3d0f82 4%, #8900a9 30%, #8c39bb 62%, #3a0c80 85%, #a583bd); -webkit-background-clip: text; -webkit-text-fill-color: transparent; padding-right: 8px; }
 .search { font-size: 14px; background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF); background: radial-gradient(circle at 33% 100%, #3d0f82 4%, #8900a9 30%, #8c39bb 62%, #3a0c80 85%, #a583bd); -webkit-background-clip: text; -webkit-text-fill-color: transparent; padding-top: 10px; }
@@ -465,8 +453,8 @@ img { width: auto; max-width: 100%; height: auto; margin: 0; padding: 0; border:
 #navigation.align-center>ul>li { display: inline-block; float: none; }
 #navigation.align-center ul ul { text-align: left; }
 #navigation.align-right>ul>li { float: right; }
-#navigation>ul>li>a { padding: 18px 20px; font-size: 14px; color: #ffffff; letter-spacing: 0px; text-decoration: none; font-weight: 400; text-transform: capitalize; }
-#navigation>ul>li:hover>a { color: #1b95e0; background-color: transparent; border-radius: 0px; }
+#navigation>ul>li>a { padding: 18px 20px; font-size: 14px; color: #383180; letter-spacing: 0px; text-decoration: none; font-weight: 400; text-transform: capitalize; }
+#navigation>ul>li:hover>a { color: #a75028; background-color: transparent; border-radius: 0px; }
 #navigation>ul>li.has-sub>a { padding-right: 36px; }
 
 /*#navigation>ul>li>a:after {
@@ -492,7 +480,7 @@ img { width: auto; max-width: 100%; height: auto; margin: 0; padding: 0; border:
 #navigation ul ul li:first-child>a { border-top-right-radius: 0px; }
 #navigation ul ul li:last-child>a { border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; }
 #navigation ul ul li:last-child>a, #navigation ul ul li.last-item>a { }
-#navigation ul ul li:hover>a, #navigation ul ul li a:hover { color: #fff; background-color: #1b95e0; border: 1px solid transparent; }
+#navigation ul ul li:hover>a, #navigation ul ul li a:hover { color: #fff; background-color: #3d0f82; border: 1px solid #3d0f82; }
 #navigation ul ul li.has-sub>a:after { position: absolute; top: 16px; right: 11px; width: 8px; height: 2px; display: block; background: #dddddd; content: ''; }
 #navigation.align-right ul ul li.has-sub>a:after { right: auto; left: 11px; }
 #navigation ul ul li.has-sub>a:before { position: absolute; top: 13px; right: 14px; display: block; width: 2px; height: 8px; background: #dddddd; content: ''; -webkit-transition: all .25s ease; -moz-transition: all .25s ease; -ms-transition: all .25s ease; -o-transition: all .25s ease; transition: all .25s ease; }
@@ -557,7 +545,7 @@ img { width: auto; max-width: 100%; height: auto; margin: 0; padding: 0; border:
 /*-----------------------------------
 7. Footer 
 -------------------------------------*/
-.footer { background: rgba(27, 149, 224, 1); }
+.footer { background: rgba(64, 14, 130, 1); background: -moz-linear-gradient(top, rgba(64, 14, 130, 1) 0%, rgba(64, 14, 130, 1) 0%, rgba(64, 14, 130, 1) 0%, rgba(117, 5, 125, 1) 50%, rgba(117, 5, 125, 1) 100%); background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(64, 14, 130, 1)), color-stop(0%, rgba(64, 14, 130, 1)), color-stop(0%, rgba(64, 14, 130, 1)), color-stop(50%, rgba(117, 5, 125, 1)), color-stop(100%, rgba(117, 5, 125, 1))); background: -webkit-linear-gradient(top, rgba(64, 14, 130, 1) 0%, rgba(64, 14, 130, 1) 0%, rgba(64, 14, 130, 1) 0%, rgba(117, 5, 125, 1) 50%, rgba(117, 5, 125, 1) 100%); background: -o-linear-gradient(top, rgba(64, 14, 130, 1) 0%, rgba(64, 14, 130, 1) 0%, rgba(64, 14, 130, 1) 0%, rgba(117, 5, 125, 1) 50%, rgba(117, 5, 125, 1) 100%); background: -ms-linear-gradient(top, rgba(64, 14, 130, 1) 0%, rgba(64, 14, 130, 1) 0%, rgba(64, 14, 130, 1) 0%, rgba(117, 5, 125, 1) 50%, rgba(117, 5, 125, 1) 100%); background: linear-gradient(to bottom, rgba(64, 14, 130, 1) 0%, rgba(64, 14, 130, 1) 0%, rgba(64, 14, 130, 1) 0%, rgba(117, 5, 125, 1) 50%, rgba(117, 5, 125, 1) 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#400e82', endColorstr='#75057d', GradientType=0); padding-top: 60px; color: #c0a6de; font-weight: 400; font-size: 14px; }
 .footer-title { margin-bottom: 30px; color: #fff; letter-spacing: 0px; font-size: 20px; font-weight: 400; }
 .footer-widget { margin-bottom: 50px; }
 .footer-widget ul { padding: 0; }
@@ -597,7 +585,7 @@ img { width: auto; max-width: 100%; height: auto; margin: 0; padding: 0; border:
 .btn-social-icon { -webkit-font-smoothing: antialiased; font-size: 14px; padding-right: 28px; display: inline-block; width: 0px; height: 0px; line-height: 1; color: #121113; }
 
 /*-------------- tiny footer ------------*/
-.tiny-footer { font-size: 12px; padding: 10px 0px; background-color: #004178; line-height: 1; }
+.tiny-footer { font-size: 12px; padding: 10px 0px; background-color: #3d0f82; line-height: 1; }
 
 /*--- easetemplate copyright link --*/
 .copyrightlink { color: #fefeff; }
@@ -983,11 +971,6 @@ margin-bottom: 0; background-color: #fffcf7; border-bottom: 1px solid #e2ded8; p
 #return-to-top i { color: #fff; margin: 0; position: relative; left: 16px; top: 9px; font-size: 28px; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
 #return-to-top:hover { background: #3d0f82; }
 #return-to-top:hover i { color: #fff; top: 9px; }
-
-.img-thumbnail{
-    height: 50%;
-    width: 50%;
-}
 
 /*==========  Non-Mobile First Method  ==========*/
 
